@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit part</title>
+    <script src="example.js"></script>
+</head>
+<body>
+    <!-- User details section -->
+<div class="user-details">
+    <div class="user-name">Ansari</div>
+    <div class="user-email">ansari@gmail.com</div>
+    <div class="user-edit-icon" onclick="openEditForm()">✎</div>
+  </div>
+  
+  <!-- Edit user form (hidden by default) -->
+  <div id="edit-form" style="display: none;">
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name-input" placeholder="Name">
+      <input type="email" id="email-input" placeholder="Email">
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  
+</body>
+</html>
